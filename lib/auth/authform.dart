@@ -10,6 +10,9 @@ class AuthForm extends StatefulWidget {
 class _AuthFormState extends State<AuthForm> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      height: MediaQuery.of(context).size.height * 0.4,
+      width: MediaQuery.of(context).size.width * 0.8,
+    );
   }
 }
