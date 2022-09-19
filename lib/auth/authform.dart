@@ -37,7 +37,7 @@ class _AuthFormState extends State<AuthForm> {
                     keyboardType: TextInputType.emailAddress,
                     validator: (value) {
                       if (value!.isEmpty || !value.contains('@')) {
-                        return 'Please enter your email';
+                        return 'Please enter a valid email address';
                       }
                       return null;
                     },
