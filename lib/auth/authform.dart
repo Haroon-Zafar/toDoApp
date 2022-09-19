@@ -25,6 +25,7 @@ class _AuthFormState extends State<AuthForm> {
       child: ListView(
         children: [
           Container(
+            padding: const EdgeInsets.all(10),
             child: Form(
               // this key is for validating Form Data
               key: _formKey,
@@ -38,10 +39,7 @@ class _AuthFormState extends State<AuthForm> {
                         borderSide: BorderSide(),
                       ),
                       labelText: 'Email',
-                      labelStyle: GoogleFonts.roboto(
-                        fontSize: 16,
-                        color: Colors.black,
-                      ),
+                      labelStyle: GoogleFonts.roboto(),
                     ),
                   )
                 ],
