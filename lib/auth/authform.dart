@@ -30,7 +30,11 @@ class _AuthFormState extends State<AuthForm> {
               child: Column(
                 children: [
                   TextFormField(
+                    // this field is for email.
+                    //  key: is used as a hint for the text field.
                     keyboardType: TextInputType.emailAddress,
+                    // A key that uses a value of a particular type to identify itself.
+                    key: ValueKey('email'),
                   ),
                 ],
               ),
