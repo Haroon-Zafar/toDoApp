@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AuthForm extends StatefulWidget {
   const AuthForm({Key? key}) : super(key: key);
@@ -30,11 +31,19 @@ class _AuthFormState extends State<AuthForm> {
               child: Column(
                 children: [
                   TextFormField(
-                    // this field is for email.
                     keyboardType: TextInputType.emailAddress,
-                    // A key that uses a value of a particular type to identify itself.
-                    key: ValueKey('email'),
-                  ),
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                        borderSide: BorderSide(),
+                      ),
+                      labelText: 'Email',
+                      labelStyle: GoogleFonts.roboto(
+                        fontSize: 16,
+                        color: Colors.black,
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),
