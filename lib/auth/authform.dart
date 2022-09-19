@@ -28,7 +28,7 @@ class _AuthFormState extends State<AuthForm> {
               // this key is for validating Form Data
               key: _formKey,
               child: Column(
-                children: [],
+                children: [TextFormField()],
               ),
             ),
           ),
