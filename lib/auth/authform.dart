@@ -35,6 +35,12 @@ class _AuthFormState extends State<AuthForm> {
                 children: [
                   TextFormField(
                     keyboardType: TextInputType.emailAddress,
+                    validator: (value) {
+                      if (value!.isEmpty || !value.contains('@')) {
+                        return 'Please enter your email';
+                      }
+                      return null;
+                    },
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8.0),
