@@ -31,6 +31,7 @@ class _AuthFormState extends State<AuthForm> {
               // this key is for validating Form Data
               key: _formKey,
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TextFormField(
                     keyboardType: TextInputType.emailAddress,
