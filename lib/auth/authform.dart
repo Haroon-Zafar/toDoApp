@@ -25,7 +25,8 @@ class _AuthFormState extends State<AuthForm> {
       child: ListView(
         children: [
           Container(
-            padding: const EdgeInsets.only(left: 20, right: 20),
+            padding:
+                const EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 20),
             child: Form(
               // this key is for validating Form Data
               key: _formKey,
