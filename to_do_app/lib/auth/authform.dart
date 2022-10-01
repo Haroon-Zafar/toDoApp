@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class AuthScreen extends StatefulWidget {
-  const AuthScreen({Key? key}) : super(key: key);
+class AuthForm extends StatefulWidget {
+  const AuthForm({Key? key}) : super(key: key);
 
   @override
-  State<AuthScreen> createState() => _AuthScreenState();
+  State<AuthForm> createState() => _AuthFormState();
 }
 
-class _AuthScreenState extends State<AuthScreen> {
+class _AuthFormState extends State<AuthForm> {
   @override
   Widget build(BuildContext context) {
     return Container();
