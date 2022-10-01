@@ -22,6 +22,8 @@ class _AuthFormState extends State<AuthForm> {
         children: [
           Container(
             child: Form(
+              // this formkey is eesential because we need to validate our form, if the user doesn't write the exact password. so for those things we need to
+              // ... assign a key.
               key: _formKey,
               child: Column(
                 children: [],
