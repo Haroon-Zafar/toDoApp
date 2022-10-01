@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:to_do_app/auth/authform.dart';
 
 class AuthScreen extends StatefulWidget {
   const AuthScreen({Key? key}) : super(key: key);
@@ -14,6 +15,7 @@ class _AuthScreenState extends State<AuthScreen> {
       appBar: AppBar(
         title: Text("Authentication"),
       ),
+      body: AuthForm(),
     );
   }
 }
