@@ -22,6 +22,7 @@ class _AuthFormState extends State<AuthForm> {
         children: [
           Container(
             child: Form(
+              key: _formKey,
               child: Column(
                 children: [],
               ),
