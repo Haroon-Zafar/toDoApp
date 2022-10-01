@@ -11,6 +11,10 @@ class _AuthFormState extends State<AuthForm> {
   // have to create a global key to access the form state
   // have to define this formkey in Form() widget
   final _formKey = GlobalKey<FormState>();
+  // why is it empty ? because user has not entered anything yet
+  final _email = '';
+  final _password = '';
+
   @override
   Widget build(BuildContext context) {
     return Container(
