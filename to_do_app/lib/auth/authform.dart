@@ -10,6 +10,9 @@ class AuthForm extends StatefulWidget {
 class _AuthFormState extends State<AuthForm> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+        // we are returning a container here whose height and width is same as the screen.
+
+        );
   }
 }
