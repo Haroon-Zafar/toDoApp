@@ -15,6 +15,17 @@ class _AuthFormState extends State<AuthForm> {
       // we are using MediaQuery to get the height and width of the screen.
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
+      child: ListView(
+        children: [
+          Container(
+            child: Form(
+              child: Column(
+                children: [],
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
