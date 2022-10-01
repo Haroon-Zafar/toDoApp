@@ -8,6 +8,9 @@ class AuthForm extends StatefulWidget {
 }
 
 class _AuthFormState extends State<AuthForm> {
+  // have to create a global key to access the form state
+  // have to define this formkey in Form() widget
+  final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Container(
