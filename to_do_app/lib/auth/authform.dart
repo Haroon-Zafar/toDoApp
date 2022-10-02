@@ -61,6 +61,7 @@ class _AuthFormState extends State<AuthForm> {
                     },
                     // we are using onSaved to save the email address.
                     onSaved: (value) {
+                      // we are saving the email address in _email variable.
                       _email = value!;
                     },
 
