@@ -74,6 +74,37 @@ class _AuthFormState extends State<AuthForm> {
                       labelText: "Enter Email",
                     ),
                   ),
+
+                  // for password
+                  TextFormField(
+                    // because user to define email address in that field.
+                    keyboardType: TextInputType.emailAddress,
+                    key: ValueKey('email'),
+                    // we are using validator to validate the email address.
+                    validator: (value) {
+                      // if the value is null or empty, then return error message.
+                      // if the value is not null or empty, then return null.
+                      if (value!.isEmpty || !value.contains('@')) {
+                        return 'Please enter a valid email address';
+                      }
+                      // if the value is not null or empty, then return null.
+                      return null;
+                    },
+                    // we are using onSaved to save the email address.
+                    onSaved: (value) {
+                      // we are saving the email address in _email variable.
+                      _email = value!;
+                    },
+
+                    // Adding some decorations.
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: new BorderSide(),
+                      ),
+                      labelText: "Enter Email",
+                    ),
+                  ),
                 ],
               ),
             ),
