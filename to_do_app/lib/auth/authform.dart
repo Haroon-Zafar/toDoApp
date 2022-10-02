@@ -148,6 +148,7 @@ class _AuthFormState extends State<AuthForm> {
                       labelText: "Enter Password",
                     ),
                   ),
+                  SizedBox(height: 20),
                 ],
               ),
             ),
