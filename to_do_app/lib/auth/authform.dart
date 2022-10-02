@@ -18,8 +18,8 @@ class _AuthFormState extends State<AuthForm> {
 
   // why is it empty ? because user has not entered anything yet
 
-  final _email = '';
-  final _password = '';
+  var _email = '';
+  var _password = '';
 
 // *********************************************************************************** //
 
@@ -59,6 +59,11 @@ class _AuthFormState extends State<AuthForm> {
                       // if the value is not null or empty, then return null.
                       return null;
                     },
+                    // we are using onSaved to save the email address.
+                    onSaved: (value) {
+                      _email = value!;
+                    },
+
                     // Adding some decorations.
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
