@@ -52,36 +52,37 @@ class _AuthFormState extends State<AuthForm> {
                   //  this username field is only visible when isLoginPage is false. So we are using a ternary operator here. If isLoginPage is true, then we will show an empty container. If isLoginPage is false, then we will show the username field
 
                   // username field
-                  TextFormField(
-                    // because user to define email address in that field.
-                    keyboardType: TextInputType.emailAddress,
-                    key: ValueKey('username'),
-                    // we are using validator to validate the email address.
-                    validator: (value) {
-                      // if the value is null or empty, then return error message.
-                      // if the value length is less than 4, then return error message.
-                      // if the value is not null or empty, then return null.
-                      if (value!.isEmpty || value.length < 4) {
-                        return 'Incorrect Username';
-                      }
-                      // if the value is not null or empty, then return null.
-                      return null;
-                    },
-                    // we are using onSaved to save the email address.
-                    onSaved: (value) {
-                      // we are saving the email address in _email variable.
-                      var _username = value;
-                    },
+                  if (!isLoginPage)
+                    TextFormField(
+                      // because user to define email address in that field.
+                      keyboardType: TextInputType.emailAddress,
+                      key: ValueKey('username'),
+                      // we are using validator to validate the email address.
+                      validator: (value) {
+                        // if the value is null or empty, then return error message.
+                        // if the value length is less than 4, then return error message.
+                        // if the value is not null or empty, then return null.
+                        if (value!.isEmpty || value.length < 4) {
+                          return 'Incorrect Username';
+                        }
+                        // if the value is not null or empty, then return null.
+                        return null;
+                      },
+                      // we are using onSaved to save the email address.
+                      onSaved: (value) {
+                        // we are saving the email address in _email variable.
+                        var _username = value;
+                      },
 
-                    // Adding some decorations.
-                    decoration: InputDecoration(
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                        borderSide: new BorderSide(),
+                      // Adding some decorations.
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          borderSide: new BorderSide(),
+                        ),
+                        labelText: "Enter Username",
                       ),
-                      labelText: "Enter Username",
                     ),
-                  ),
 
                   // why TextFromField ? because we are using Form() widget, so we need to use TextFormField() widget.
                   TextFormField(
