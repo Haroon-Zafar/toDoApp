@@ -159,7 +159,13 @@ class _AuthFormState extends State<AuthForm> {
                       color: Colors.purple,
                     ),
                     // ignore: deprecated_member_use
-                    child: RaisedButton(color: Colors.purple, onPressed: () {}),
+                    child: RaisedButton(
+                        child: Text("Login"),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        color: Colors.purple,
+                        onPressed: () {}),
                   )
                 ],
               ),
