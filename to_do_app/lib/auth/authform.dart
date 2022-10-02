@@ -84,6 +84,8 @@ class _AuthFormState extends State<AuthForm> {
                       ),
                     ),
 
+                  // for spacing between fields.
+                  SizedBox(height: 20),
                   // why TextFromField ? because we are using Form() widget, so we need to use TextFormField() widget.
                   TextFormField(
                     // because user to define email address in that field.
@@ -114,7 +116,8 @@ class _AuthFormState extends State<AuthForm> {
                       labelText: "Enter Email",
                     ),
                   ),
-
+                  // for spacing between fields.
+                  SizedBox(height: 20),
                   // for password
                   TextFormField(
                     // because user to define email address in that field.
