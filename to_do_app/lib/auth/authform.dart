@@ -8,12 +8,19 @@ class AuthForm extends StatefulWidget {
 }
 
 class _AuthFormState extends State<AuthForm> {
+// *********************************************************************************** //
+
   // have to create a global key to access the form state
   // have to define this formkey in Form() widget
+
   final _formKey = GlobalKey<FormState>();
+
   // why is it empty ? because user has not entered anything yet
+
   final _email = '';
   final _password = '';
+
+// *********************************************************************************** //
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +37,14 @@ class _AuthFormState extends State<AuthForm> {
               // ... assign a key.
               key: _formKey,
               child: Column(
-                children: [],
+                // here we are going to define textfields and buttons
+                children: [
+                  // why TextFromField ? because we are using Form() widget, so we need to use TextFormField() widget.
+                  TextFormField(
+                    // because user to define email address in that field.
+                    keyboardType: TextInputType.emailAddress,
+                  ),
+                ],
               ),
             ),
           ),
