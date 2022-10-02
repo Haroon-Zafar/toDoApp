@@ -151,7 +151,9 @@ class _AuthFormState extends State<AuthForm> {
                   SizedBox(height: 20),
                   // ignore: deprecated_member_use
                   Container(
+                    padding: EdgeInsets.all(5),
                     height: 70,
+                    width: double.infinity,
                     // ignore: deprecated_member_use
                     child: RaisedButton(onPressed: () {}),
                   )
