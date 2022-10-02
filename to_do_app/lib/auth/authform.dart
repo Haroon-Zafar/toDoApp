@@ -49,6 +49,8 @@ class _AuthFormState extends State<AuthForm> {
                 children: [
                   // if isLoginPage is true, then we will show the login text. If isLoginPage is false, then we will show the signup text
 
+                  //  this username field is only visible when isLoginPage is false. So we are using a ternary operator here. If isLoginPage is true, then we will show an empty container. If isLoginPage is false, then we will show the username field
+
                   // username field
                   TextFormField(
                     // because user to define email address in that field.
