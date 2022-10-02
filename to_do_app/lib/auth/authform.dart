@@ -160,7 +160,9 @@ class _AuthFormState extends State<AuthForm> {
                     ),
                     // ignore: deprecated_member_use
                     child: RaisedButton(
-                        child: Text("Login"),
+
+                        // if isLoginPage is true button's text will be Login, if isLoginPage is false button's text will be Signup
+                        child: isLoginPage ? Text("Login") : Text("Signup"),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),
                         ),
