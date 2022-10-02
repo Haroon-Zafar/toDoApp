@@ -33,6 +33,8 @@ class _AuthFormState extends State<AuthForm> {
       child: ListView(
         children: [
           Container(
+            // Edges are touching the screen, so add a padding
+            padding: EdgeInsets.all(20),
             child: Form(
               // this formkey is eesential because we need to validate our form, if the user doesn't write the exact password. so for those things we need to
               // ... assign a key.
