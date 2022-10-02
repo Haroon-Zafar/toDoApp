@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:google_fonts/google_fonts.dart';
 
 class AuthForm extends StatefulWidget {
   const AuthForm({Key? key}) : super(key: key);
@@ -44,6 +45,14 @@ class _AuthFormState extends State<AuthForm> {
                     // because user to define email address in that field.
                     keyboardType: TextInputType.emailAddress,
                     key: ValueKey('email'),
+                    // Adding some decorations.
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: new BorderSide(),
+                      ),
+                      labelText: "Enter Email",
+                    ),
                   ),
                 ],
               ),
