@@ -62,7 +62,7 @@ class _AuthFormState extends State<AuthForm> {
                     // we are using onSaved to save the email address.
                     onSaved: (value) {
                       // we are saving the email address in _email variable.
-                      _email = value!;
+                      var _email = value;
                     },
 
                     // Adding some decorations.
@@ -79,13 +79,13 @@ class _AuthFormState extends State<AuthForm> {
                   TextFormField(
                     // because user to define email address in that field.
                     keyboardType: TextInputType.emailAddress,
-                    key: ValueKey('email'),
+                    key: ValueKey('password'),
                     // we are using validator to validate the email address.
                     validator: (value) {
                       // if the value is null or empty, then return error message.
                       // if the value is not null or empty, then return null.
-                      if (value!.isEmpty || !value.contains('@')) {
-                        return 'Please enter a valid email address';
+                      if (value!.isEmpty || value.length < 7) {
+                        return 'Please enter a valid email address with atleast 7 characters';
                       }
                       // if the value is not null or empty, then return null.
                       return null;
@@ -93,7 +93,7 @@ class _AuthFormState extends State<AuthForm> {
                     // we are using onSaved to save the email address.
                     onSaved: (value) {
                       // we are saving the email address in _email variable.
-                      _email = value!;
+                      var _password = value;
                     },
 
                     // Adding some decorations.
@@ -102,7 +102,7 @@ class _AuthFormState extends State<AuthForm> {
                         borderRadius: BorderRadius.circular(10),
                         borderSide: new BorderSide(),
                       ),
-                      labelText: "Enter Email",
+                      labelText: "Enter Password",
                     ),
                   ),
                 ],
