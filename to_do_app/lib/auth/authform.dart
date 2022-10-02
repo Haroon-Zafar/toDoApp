@@ -20,7 +20,7 @@ class _AuthFormState extends State<AuthForm> {
 
   var _email = '';
   var _password = '';
-
+  var _username = '';
   // we won't show the username if isLoginPage is true. It means that user is in login page. If isLoginPage is false, then user is in signup page. So we will show the username field
   bool isLoginPage = false;
 
