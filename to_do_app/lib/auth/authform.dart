@@ -43,6 +43,7 @@ class _AuthFormState extends State<AuthForm> {
                   TextFormField(
                     // because user to define email address in that field.
                     keyboardType: TextInputType.emailAddress,
+                    key: ValueKey('email'),
                   ),
                 ],
               ),
