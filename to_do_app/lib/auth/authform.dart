@@ -149,6 +149,8 @@ class _AuthFormState extends State<AuthForm> {
                     ),
                   ),
                   SizedBox(height: 20),
+                  // ignore: deprecated_member_use
+                  RaisedButton(onPressed: () {})
                 ],
               ),
             ),
