@@ -154,6 +154,10 @@ class _AuthFormState extends State<AuthForm> {
                     padding: EdgeInsets.all(5),
                     height: 70,
                     width: double.infinity,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.blue,
+                    ),
                     // ignore: deprecated_member_use
                     child: RaisedButton(
                         color: Theme.of(context).primaryColor,
