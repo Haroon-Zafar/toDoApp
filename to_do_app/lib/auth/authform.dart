@@ -155,13 +155,11 @@ class _AuthFormState extends State<AuthForm> {
                     height: 70,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.purple,
                     ),
                     // ignore: deprecated_member_use
-                    child: RaisedButton(
-                        color: Theme.of(context).primaryColor,
-                        onPressed: () {}),
+                    child: RaisedButton(color: Colors.purple, onPressed: () {}),
                   )
                 ],
               ),
