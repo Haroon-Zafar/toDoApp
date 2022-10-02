@@ -40,6 +40,8 @@ class _AuthFormState extends State<AuthForm> {
               // ... assign a key.
               key: _formKey,
               child: Column(
+                // Aligning the content into center
+                mainAxisAlignment: MainAxisAlignment.center,
                 // here we are going to define textfields and buttons
                 children: [
                   // why TextFromField ? because we are using Form() widget, so we need to use TextFormField() widget.
