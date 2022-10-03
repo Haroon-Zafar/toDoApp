@@ -27,7 +27,10 @@ class _AuthFormState extends State<AuthForm> {
 // *********************************************************************************** //
 
 // Defining a function
-  startAuthentication() async {}
+  startAuthentication() async {
+    // validating the form fields
+    final validity = _formKey.currentState!.validate();
+  }
 
 // *********************************************************************************** //
 
