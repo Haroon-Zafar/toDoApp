@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
@@ -39,7 +40,16 @@ class _AuthFormState extends State<AuthForm> {
       // My form is saved
       // using ! because The method 'save' can't be unconditionally invoked because the receiver can be 'null'.
       _formKey.currentState!.save();
+
+      // Now I want to navigate to home screen.
+      submitForm();
     }
+  }
+
+// Defining the submitForm function
+  submitForm() async {
+    // this FirebaseAuth is giving an error. So we have to import it
+    final auth = FirebaseAuth.instance;
   }
 
 // *********************************************************************************** //
