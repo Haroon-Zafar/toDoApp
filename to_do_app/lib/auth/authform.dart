@@ -171,7 +171,13 @@ class _AuthFormState extends State<AuthForm> {
                   SizedBox(height: 20),
                   Container(
                     child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          // if isLoginPage is true, then we will set isLoginPage to false. If isLoginPage is false, then we will set isLoginPage to true.
+                          setState(() {
+                            isLoginPage = !isLoginPage;
+                          });
+                        },
+                        },
                         child: isLoginPage
                             ? Text("Not a Member ?")
                             : Text("Don't have an account?")),
