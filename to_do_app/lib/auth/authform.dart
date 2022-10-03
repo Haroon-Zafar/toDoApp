@@ -30,6 +30,8 @@ class _AuthFormState extends State<AuthForm> {
   startAuthentication() async {
     // validating the form fields
     final validity = _formKey.currentState!.validate();
+    // Unfocus the fields after submitting the form
+    FocusScope.of(context).unfocus();
   }
 
 // *********************************************************************************** //
