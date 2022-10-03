@@ -26,6 +26,11 @@ class _AuthFormState extends State<AuthForm> {
 
 // *********************************************************************************** //
 
+// Defining a function
+  startAuthentication() async {}
+
+// *********************************************************************************** //
+
   @override
   Widget build(BuildContext context) {
     return Container(
