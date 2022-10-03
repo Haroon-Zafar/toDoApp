@@ -151,24 +151,28 @@ class _AuthFormState extends State<AuthForm> {
                   SizedBox(height: 20),
                   // ignore: deprecated_member_use
                   Container(
-                    padding: EdgeInsets.all(5),
-                    height: 70,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.purple,
-                    ),
-                    // ignore: deprecated_member_use
-                    child: RaisedButton(
-
-                        // if isLoginPage is true button's text will be Login, if isLoginPage is false button's text will be Signup
-                        child: isLoginPage ? Text("Login") : Text("Signup"),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
+                      padding: EdgeInsets.all(5),
+                      height: 70,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
                         color: Colors.purple,
-                        onPressed: () {}),
-                  )
+                      ),
+                      // ignore: deprecated_member_use
+                      child: RaisedButton(
+
+                          // if isLoginPage is true button's text will be Login, if isLoginPage is false button's text will be Signup
+                          child: isLoginPage ? Text("Login") : Text("Signup"),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          color: Colors.purple,
+                          onPressed: () {})),
+                  SizedBox(height: 20),
+                  Container(
+                    child:
+                        TextButton(onPressed: () {}, child: Text("Already a ")),
+                  ),
                 ],
               ),
             ),
