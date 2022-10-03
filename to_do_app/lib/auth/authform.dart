@@ -177,7 +177,6 @@ class _AuthFormState extends State<AuthForm> {
                             isLoginPage = !isLoginPage;
                           });
                         },
-                        },
                         child: isLoginPage
                             ? Text("Not a Member ?")
                             : Text("Don't have an account?")),
