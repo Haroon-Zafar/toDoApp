@@ -35,7 +35,11 @@ class _AuthFormState extends State<AuthForm> {
     FocusScope.of(context).unfocus();
 
     // if the form is valid then what I am going to do
-    if (validity) {}
+    if (validity) {
+      // My form is saved
+      // using ! because The method 'save' can't be unconditionally invoked because the receiver can be 'null'.
+      _formKey.currentState!.save();
+    }
   }
 
 // *********************************************************************************** //
